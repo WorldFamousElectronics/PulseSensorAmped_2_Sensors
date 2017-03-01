@@ -12,15 +12,26 @@ void serialOutput(){   // Decide How To Output Serial.
         sendDataToSerial('a'+i, Signal[i]);
       }
       break;
-    case SERIAL_PLOTTER:  // open the Arduino Serial Plotter to visualize these data
+    case SERIAL_PLOTTER1:  // open the Arduino Serial Plotter to visualize only Signal and BMP from PulseSensors
       for(int i=0; i<numPulseSensors; i++){
       	Serial.print(BPM[i]);
       	Serial.print(",");
-      	Serial.print(IBI[i]);
-      	Serial.print(",");
+//      	Serial.print(IBI[i]);
+//      	Serial.print(",");
       	Serial.print(Signal[i]);
 	      if(i!=numPulseSensors-1){ Serial.print(","); }
       }
+
+       case SERIAL_PLOTTER2:  // open the Arduino Serial Plotter to visualize all Signal, BMP, and IBI from PulseSensors
+      for(int i=0; i<numPulseSensors; i++){
+        Serial.print(BPM[i]);
+        Serial.print(",");
+        Serial.print(IBI[i]);
+        Serial.print(",");
+        Serial.print(Signal[i]);
+        if(i!=numPulseSensors-1){ Serial.print(","); }
+      }
+   
       Serial.println();
       break;
     default:

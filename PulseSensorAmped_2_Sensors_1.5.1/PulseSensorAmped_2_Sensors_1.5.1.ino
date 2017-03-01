@@ -20,7 +20,8 @@ https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/
 */
 
 #define PROCESSING_VISUALIZER 1
-#define SERIAL_PLOTTER  2
+#define SERIAL_PLOTTER1  2
+#define SERIAL_PLOTTER2  3
 
 //  Variables
 const int numPulseSensors = 2;
@@ -58,7 +59,8 @@ volatile boolean secondBeat[numPulseSensors];      // used to seed rate array so
 //      https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer
 // SERIAL_PLOTTER outputs sensor data for viewing with the Arduino Serial Plotter
 //      run the Arduino Serial Plotter at 115200 baud: Tools/Serial Plotter or Command+L
-static int outputType = SERIAL_PLOTTER;
+static int outputType = SERIAL_PLOTTER1;
+
 
 void setup() {
 
