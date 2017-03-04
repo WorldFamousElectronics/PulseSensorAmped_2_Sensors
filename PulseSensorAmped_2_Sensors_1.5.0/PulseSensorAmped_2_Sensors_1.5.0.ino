@@ -4,7 +4,7 @@
      by
      Joel Murphy and Yury Gitman   http://www.pulsesensor.com *   Updated Winter 2017
 
-     WFE llc.  Public Domain. 2017
+     World Famous Electronics llc.  Public Domain. 2017
 
 
   ----------------------  Notes ----------------------  ----------------------
@@ -23,7 +23,7 @@
 #define SERIAL_PLOTTER  2
 
 //  Variables
-const int numPulseSensors = 3;
+const int numPulseSensors = 2;
 const int threshold = 530;
 int pulsePin[numPulseSensors];                 // Pulse Sensor purple wire connected to analog pin 0
 int blinkPin[numPulseSensors];                // pin to blink led at each beat
@@ -149,4 +149,3 @@ void setStuph() {
 
   }
 }
-
