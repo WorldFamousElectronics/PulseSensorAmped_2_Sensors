@@ -67,9 +67,9 @@ In this example, I am holding both of the Pulse Sensors against my right and lef
 
 The Arduino code supports a blinking LED and a fading LED for both Pulse Sensors.
 
-Analog Pin  |  Blink Pin  |  Fade Pin  |
-:----------:|:-----------:|:----------:|
-     0      |     13      |     5      |
-     1      |     12      |     9      |
+| Analog Pin  |  Blink Pin  |  Fade Pin  |
+|:-----------:|:-----------:|:----------:|
+|      0      |     13      |     5      |
+|      1      |     12      |     9      |
 
 **NOTE: Be sure to use a resistor in series with your LEDs!** 
