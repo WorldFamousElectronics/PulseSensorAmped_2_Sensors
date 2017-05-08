@@ -27,7 +27,7 @@ Then, open the sketch called `PulseSensorAmped_2_Sensors_1.5.0` in Arduino and m
 
 ![outputType = SERIAL_PLOTTER](images/outputType-SERIAL_PLOTTER.png)
 
-Upload the sketch to your Arduino UNO, and then turn on the Serial Plotter by selecting `Tools > Serial Plotter` or using the shortcut `Command + L`. Here's an example of the data stream.
+Upload the sketch to your Arduino UNO, and then turn on the Serial Plotter by selecting `Tools > Serial Plotter` or using the shortcut `Command + L`. When it opens, make sure that the baud rate is set to `250000` on the lower right menu. Here's an example of the data stream.
 
 ![2 Pulse Serial Plotter](images/2_Pulse_Sensors_Serial_Plotter.png)
 
