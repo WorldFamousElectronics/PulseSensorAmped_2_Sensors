@@ -14,6 +14,10 @@
   3) Determines BPMs for both users
   4) Prints All of the Above to Arduino Serial Plotter or our Processing Visualizer
 
+  Plug the Pulse Sensor RED wires into UNO pins 7 and 8 for 5V power! 
+  Plug the Pulse Sensor BLACK wires into the GND pins
+  Plug the Pulse Sensor PURPLE wires into Analog 0 and Analog 1 pins
+
   Read Me:
   https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md
   ----------------------       ----------------------  ----------------------
@@ -104,16 +108,20 @@ void ledFadeToBeat() {
 // INITIALIZE VARIABLES AND INPUT/OUTPUT PINS
 void setStuph() {
 
-  // aux power to Pin 8, for PulseSensor +5V Power
+  // use power from Arduino pins to power PulseSensors with +5V Power!
   pinMode(8, OUTPUT);
   digitalWrite(8, HIGH);
   pinMode(7, OUTPUT);
   digitalWrite(7, HIGH);
 
-  //    Possible Power for 3'rd PulseSensor on Pin 7, un-comment
-  //     pinMode(7,OUTPUT);
-  //    digitalWrite(7, HIGH);
+//    Possible Power for 3rd PulseSensor on Pin 7, un-comment
+//      pinMode(7,OUTPUT);
+//      digitalWrite(7, HIGH);
 
+
+/*
+ * Initialize variables for each pulse sensor so we can find the beats
+ */
 
   for (int i = 0; i < numPulseSensors; i++) {
     lastBeatTime[i] = 0;
@@ -128,12 +136,12 @@ void setStuph() {
     QS[i] = false;
     switch (i) {
       case  0:
-        pulsePin[i] = 0;    // pulse pin 0
+        pulsePin[i] = 0;    // pulse pin Analog 0
         blinkPin[i] = 13;   // blink output for pulse 0
         fadePin[i] = 5;     // fade output for pulse 0
         break;
       case  1:
-        pulsePin[i] = 1;    // pulse pin 1
+        pulsePin[i] = 1;    // pulse pin Analog 1
         blinkPin[i] = 12;   // blink output for pulse 1
         fadePin[i] = 9;     // fade output for pulse 1
         break;
