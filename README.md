@@ -15,8 +15,8 @@ This Arduino Sketch is written to target an Arduino UNO board. It can be modifie
 
 ## Connect To Arduino Serail Plotter:
 
-You can visualize the Pulse Sensor data with the Arduino Serial Plotter or a modified version of our Pulse Sensor Processing Visualizer, found in this repo.  
-The first step is to download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder. Then, move the file `PulseSensorAmpd_Processing_2_Sensors` and all of it's contents into your `Documents/Processing` folder.  
+You can visualize the Pulse Sensor data with the Arduino Serial Plotter.  
+The first step is to download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder.  
 Next, connect the Pulse Sensors to your Arduino UNO like so:
 
 * Connect Pulse Sensor **RED** wires to Digital Pins 7 and 8
@@ -36,8 +36,8 @@ In this example, I am holding both of the Pulse Sensors against my right and lef
 
 ## Connect To Pulse Sensor Processing Visualzer:
 
-You can visualize the Pulse Sensor data with the Arduino Serial Plotter or a modified version of our Pulse Sensor Processing Visualizer, found in this repo.  
-In order to view the data from two Pulse Sensors with our modified Processing Visualizer, first download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder. Then, move the file `PulseSensorAmpd_Processing_2_Sensors` and all of it's contents into your `Documents/Processing` folder. If you don't already have Processing on your computer, go to the [Processing website](www.processing.org) and download the latest version. Then come back here.  
+You can visualize the Pulse Sensor data with a modified version of our Pulse Sensor Processing Visualizer, found in this repo.  
+In order to view the data from two Pulse Sensors with our modified Processing Visualizer, first download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder. Then, move the file `PulseSensorAmpd_Processing_2_Sensors` and all of it's contents into your `Documents/Processing` folder. If you don't already have Processing on your computer, go to the [Processing website](http://www.processing.org) and download the latest version. Then come back here.  
 
 Next, connect the Pulse Sensors to your Arduino UNO like so:
 
@@ -50,7 +50,7 @@ Open the sketch called `PulseSensorAmped_2_Sensors_1.5.0` in Arduino and make su
 
 ![outputType = SERIAL_PLOTTER](images/outputType-PROCESSING_VISUALIZER.png)
 
-Upload the sketch to your Arduino UNO. Then, run the Processing app, and open the visualizer sketch by selecting `File > Sketchbook` and then choosing `PulseSensorAmped_Processing_2_Sensors`. You don't need to make any changes to this code. Simply run it by clicking the `Run` button on the top of the program window. When the program opens, it will prompt you to select the serial port your Arduino is connected to. This will be the same one that you used to program the board with Arduino.
+Upload the sketch to your Arduino UNO. Then, run the Processing app, and open the visualizer sketch by selecting `File > Sketchbook` and then choosing `PulseSensorAmped_Processing_2_Sensors`. You don't need to make any changes to this code. Simply run it by clicking the `Run` button on the top of the code window. When the program opens, it will prompt you to select the serial port your Arduino is connected to. This will be the same one that you used to program the board with Arduino.
 
 ![Select Serial Port](images/Processing-select_serial_port.png)
 
@@ -61,7 +61,7 @@ The Visualizer will start running, and you should see two heartbeat data signals
 
 ![2 Pulse Serial Plotter](images/2_Pulse_Sensors_Processing_Visualizer.jpg)
 
-In this example, I am holding both of the Pulse Sensors against my right and left fingers. That's why the pulses are the same!
+In this example, I am holding both of the Pulse Sensors against my right and left fingers. That's why the pulses are the same! For more details on how our Visualizer works, please see this [README](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer). 
 
 ## Attaching LEDs To Arduino UNO
 
@@ -69,7 +69,7 @@ The Arduino code supports a blinking LED and a fading LED for both Pulse Sensors
 
 Analog Pin  |  Blink Pin  |  Fade Pin  |
 :----------:|:-----------:|:----------:|
-  0  |  13  |  5  |
-1  |  12  |  9  |
+     0      |     13      |     5      |
+     1      |     12      |     9      |
 
 **NOTE: Be sure to use a resistor in series with your LEDs!** 
