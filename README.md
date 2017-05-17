@@ -13,7 +13,7 @@ This Arduino Sketch is written to target an Arduino UNO board. It can be modifie
 
 **IMPORTANT: Read this entire tutorial bifore getting started!**
 
-## Connect To Arduino Serail Plotter:
+## Connect To Arduino Serial Plotter:
 
 You can visualize the PulseSensor data with the Arduino Serial Plotter.  
 The first step is to download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder.  
