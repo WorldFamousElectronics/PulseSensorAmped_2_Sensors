@@ -1,23 +1,23 @@
-# Pulse Sensor Amped With 2 Sensors
-* Working Arduino code that uses two pulse sensors at the same time !  
+# 2 PulseSensor's on 1 Arduino
+* Working Arduino code that uses 2 PulseSensor's at the same time !  
 * Modifiable for more than two sensors 
 * With Arduino UNO, you could potentially have up to 6 Pulse Sensors   
 * Works with the Arduino Serial Plotter 
 * Works with a modified version of our Processing Visualizer
-* Blinks an LED with the pulse from each Pulse Sensor
-* Fades an LED with the pulse from each Pulse Sensor 
+* Blinks an LED with the pulse from each PulseSensor
+* Fades an LED with the pulse from each PulseSensor 
 
-This Arduino Sketch is written to target an Arduino UNO board. It can be modified to target other hardware. It will read the signal from two Pulse Sensors on Analog pins A0 and A1.
+This Arduino Sketch is written to target an Arduino UNO board. It can be modified to target other hardware. It will read the signal from 2 PulseSensor's on Analog pins A0 and A1.
 
-**NOTE: For ease of implementation, this code is designed to power the Pulse Sensors from Digital Pins 7 and 8. If you don't intend to power the Pulse Sensors from Digial Pins, you might want to take out that part.**
+**NOTE: For ease of implementation, this code is designed to power the PulseSensor's from Digital Pins 7 and 8. If you don't intend to power the PulseSensors from Digial Pins, you might want to take out that part.**
 
 **IMPORTANT: Read this entire tutorial bifore getting started!**
 
 ## Connect To Arduino Serail Plotter:
 
-You can visualize the Pulse Sensor data with the Arduino Serial Plotter.  
+You can visualize the PulseSensor data with the Arduino Serial Plotter.  
 The first step is to download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder.  
-Next, connect the Pulse Sensors to your Arduino UNO like so:
+Next, connect the PulseSensors to your Arduino UNO like so:
 
 * Connect Pulse Sensor **RED** wires to Digital Pins 7 and 8
 * Connect Pulse Sensor **BLACK** wires to the GND Pins
@@ -34,12 +34,12 @@ Upload the sketch to your Arduino UNO, and then turn on the Serial Plotter by se
 In this example, I am holding both of the Pulse Sensors against my right and left fingers. That's why the pulses are the same!
 
 
-## Connect To Pulse Sensor Processing Visualzer:
+## Connect To PulseSensor Processing Visualzer:
 
-You can visualize the Pulse Sensor data with a modified version of our Pulse Sensor Processing Visualizer, found in this repo.  
-In order to view the data from two Pulse Sensors with our modified Processing Visualizer, first download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder. Then, move the file `PulseSensorAmpd_Processing_2_Sensors` and all of it's contents into your `Documents/Processing` folder. If you don't already have Processing on your computer, go to the [Processing website](http://www.processing.org) and download the latest version. Then come back here.  
+You can visualize the PulseSensor data with a modified version of our Pulse Sensor Processing Visualizer, found in this repo.  
+In order to view the data from two PulseSensor's with our modified Processing Visualizer, first download this repository. When the download is complete, move the file `PulseSensorAmped_2_Sensors_1.5.0` and all of it's contents into your `Documents/Arduino` folder. Then, move the file `PulseSensorAmpd_Processing_2_Sensors` and all of it's contents into your `Documents/Processing` folder. If you don't already have Processing on your computer, go to the [Processing website](http://www.processing.org) and download the latest version. Then come back here.  
 
-Next, connect the Pulse Sensors to your Arduino UNO like so:
+Next, connect the PulseSensor's to your Arduino UNO like so:
 
 * Connect Pulse Sensor **RED** wires to Digital Pins 7 and 8
 * Connect Pulse Sensor **BLACK** wires to the GND Pins
@@ -65,7 +65,7 @@ In this example, I am holding both of the Pulse Sensors against my right and lef
 
 ## Attaching LEDs To Arduino UNO
 
-The Arduino code supports a blinking LED and a fading LED for both Pulse Sensors.
+The Arduino code supports a blinking LED and a fading LED for both PulseSensor's.
 
 | Analog Pin  |  Blink Pin  |  Fade Pin  |
 |:-----------:|:-----------:|:----------:|
